@@ -2,7 +2,7 @@
   <img src="src\assets\icon\app-logo.png" width="60%" alt="DATAQUEST-logo">
 </p>
 <p align="center">
-    <h1 align="center">DATAQUEST</h1>
+    <h1 align="center">DATAQUEST PIF</h1>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/programa-integral-de-fruticultura-5/dataquest?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
@@ -365,7 +365,7 @@ To contribute to the project, please follow this guidelines
     android {
       ...
       defaultConfig {
-        applicationId "com.blaucastmedia.dataquest.app"
+        applicationId "com.corpovalle.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 90 

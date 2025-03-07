@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Dataquest</string>
-    <string name="title_activity_main">Dataquest</string>
-    <string name="package_name">com.blaucastmedia.dataquest.app</string>
-    <string name="custom_url_scheme">com.blaucastmedia.dataquest.app</string>
+    <string name="app_name">PIF</string>
+    <string name="title_activity_main">PIF</string>
+    <string name="package_name">com.corpovalle.app</string>
+    <string name="custom_url_scheme">com.corpovalle.app</string>
 </resources>

@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.blaucastmedia.dataquest.app',
-  appName: 'Dataquest',
+  appId: 'com.corpovalle.app',
+  appName: 'PIF',
   webDir: 'www',
   server: {
     androidScheme: 'https'

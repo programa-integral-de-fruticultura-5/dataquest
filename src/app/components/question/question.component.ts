@@ -7,7 +7,7 @@ import {
 } from '@ionic/angular';
 import { QuestionService } from '@services/detailed-form/question/question.service';
 import { FormDetail } from '@models/FormDetail.namespace';
-import { DataquestHeaderComponent } from '../header/dataquest-header/dataquest-header.component';
+import { PifHeaderComponent } from '../header/pif-header/pif-header.component';
 import { CommonModule, Location } from '@angular/common';
 import { TableComponent } from './type/table/table.component';
 import { TypeComponent } from './type/type.component';
@@ -26,7 +26,7 @@ import { Subscription } from 'rxjs';
     IonicModule,
     TypeComponent,
     TableComponent,
-    DataquestHeaderComponent,
+    PifHeaderComponent,
     ReactiveFormsModule,
   ],
   standalone: true,

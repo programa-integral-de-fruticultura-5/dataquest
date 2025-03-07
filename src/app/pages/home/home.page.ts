@@ -122,7 +122,7 @@ export class HomePage {
         attachments: [
           {
             type: 'absolute',
-            path: `storage/emulated/0/Android/data/com.blaucastmedia.dataquest.app/files/${filename}`, // Android
+            path: `storage/emulated/0/Android/data/com.corpovalle.app/files/${filename}`, // Android
           },
         ],
       });

@@ -4,7 +4,7 @@ import { AlertController, IonicModule, ToastController } from '@ionic/angular';
 import { DetailedFormService } from '@services/detailed-form/detailed-form.service';
 import { FormDetail } from '@models/FormDetail.namespace';
 import { QuestionComponent } from '@components/question/question.component';
-import { DataquestHeaderComponent } from '@components/header/dataquest-header/dataquest-header.component';
+import { PifHeaderComponent } from '@components/header/pif-header/pif-header.component';
 import { LocationService } from '@services/location/location.service';
 import { Position } from '@capacitor/geolocation';
 
@@ -17,7 +17,7 @@ import { Position } from '@capacitor/geolocation';
     CommonModule,
     IonicModule,
     QuestionComponent,
-    DataquestHeaderComponent,
+    PifHeaderComponent,
   ],
 })
 export class DetailedFormComponent {

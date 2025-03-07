@@ -112,7 +112,7 @@ jobs:
         uses: r0adkll/upload-google-play@v1.1.3
         with:
           serviceAccountJsonPlainText: ${{ secrets.SERVICE_ACCOUNT_JSON }}
-          packageName: com.blaucastmedia.dataquest.app
+          packageName: com.corpovalle.app
           releaseFiles: ${{ github.workspace }}/bundle/app-release-signed.aab
           releaseName: ${{ env.VERSION_NAME }}-${{ env.DEPLOY_ENVIRONMENT }}.${{ env.VERSION_CODE }}
           track: ${{ steps.set_track.outputs.TRACK }}
