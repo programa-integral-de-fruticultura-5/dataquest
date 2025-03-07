@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
   mockServices: true,
-  url: 'https://agroinsumos.blaucast.com',
+  url: 'https://prif5.blaucast.com',
   authEndpoint: 'auth/login',
   formsEndpoint: 'form-detail',
   producersEndpoint: 'producers',

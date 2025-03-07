@@ -5,10 +5,10 @@
     <h1 align="center">DATAQUEST PIF</h1>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/github/license/programa-integral-de-fruticultura-5/dataquest?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/programa-integral-de-fruticultura-5/dataquest?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/programa-integral-de-fruticultura-5/dataquest?style=flat&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/programa-integral-de-fruticultura-5/dataquest?style=flat&color=0080ff" alt="repo-language-count">
+	<img src="https://img.shields.io/github/license/programa-integral-de-fruticultura-5/pif5_dataquest?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/programa-integral-de-fruticultura-5/pif5_dataquest?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/programa-integral-de-fruticultura-5/pif5_dataquest?style=flat&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/programa-integral-de-fruticultura-5/pif5_dataquest?style=flat&color=0080ff" alt="repo-language-count">
 </p>
 <p align="center">
 		<em>Built with the tools and technologies:</em>
@@ -145,14 +145,14 @@
 
 Build the project from source:
 
-1. Clone the dataquest repository:
+1. Clone the pif5_dataquest repository:
 ```sh
-❯ git clone https://github.com/programa-integral-de-fruticultura-5/dataquest
+❯ git clone https://github.com/programa-integral-de-fruticultura-5/pif5_dataquest.git
 ```
 
 2. Navigate to the project directory:
 ```sh
-❯ cd dataquest
+❯ cd pif5_dataquest
 ```
 
 3. Install the required dependencies:
@@ -384,8 +384,8 @@ To contribute to the project, please follow this guidelines
 <summary>Contributor Graph</summary>
 <br>
 <p align="left">
-   <a href="https://github.com{/programa-integral-de-fruticultura-5/dataquest/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=programa-integral-de-fruticultura-5/dataquest">
+   <a href="https://github.com{/programa-integral-de-fruticultura-5/pif5_dataquest/}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=programa-integral-de-fruticultura-5/pif5_dataquest">
    </a>
 </p>
 </details>
