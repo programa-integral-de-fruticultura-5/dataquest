@@ -20,8 +20,8 @@ const config: CapacitorConfig = {
   },
   android: {
       buildOptions: {
-        keystorePath: 'dataquest-keystore.jks',
-        keystoreAlias: 'dataquest',
+        keystorePath: 'pif-keystore.jks',
+        keystoreAlias: 'pif',
         releaseType: 'AAB'
       }
   }

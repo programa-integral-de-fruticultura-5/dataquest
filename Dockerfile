@@ -102,7 +102,7 @@ RUN ionic cap build android --configuration=${ENVIRONMENT} --no-open
 # RUN npx ng build  --configuration=${ENVIRONMENT} && npx cap copy
 
 # Create the keystore file
-RUN echo ${KEYSTORE} | base64 -d > android/dataquest-keystore.jks
+RUN echo ${KEYSTORE} | base64 -d > android/pif-keystore.jks
 
 # Set the ENTRYPOINT to compile the artifact (.aab)
 RUN npx cap build android \
@@ -110,4 +110,4 @@ RUN npx cap build android \
   --keystorealias=${KEYSTORE_ALIAS} \
   --keystorealiaspass=${KEYSTORE_ALIAS_PASSWORD} \
   --keystorepass=${KEYSTORE_PASSWORD} \
-  --keystorepath="dataquest-keystore.jks"
+  --keystorepath="pif-keystore.jks"

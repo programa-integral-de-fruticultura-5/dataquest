@@ -89,10 +89,10 @@
     <h1 align="center">DATAQUEST PIF</h1>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/github/license/programa-integral-de-fruticultura-5/dataquest?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-    <img src="https://img.shields.io/github/last-commit/programa-integral-de-fruticultura-5/dataquest?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-    <img src="https://img.shields.io/github/languages/top/programa-integral-de-fruticultura-5/dataquest?style=flat&color=0080ff" alt="repo-top-language">
-    <img src="https://img.shields.io/github/languages/count/programa-integral-de-fruticultura-5/dataquest?style=flat&color=0080ff" alt="repo-language-count">
+    <img src="https://img.shields.io/github/license/programa-integral-de-fruticultura-5/pif5_dataquest?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+    <img src="https://img.shields.io/github/last-commit/programa-integral-de-fruticultura-5/pif5_dataquest?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+    <img src="https://img.shields.io/github/languages/top/programa-integral-de-fruticultura-5/pif5_dataquest?style=flat&color=0080ff" alt="repo-top-language">
+    <img src="https://img.shields.io/github/languages/count/programa-integral-de-fruticultura-5/pif5_dataquest?style=flat&color=0080ff" alt="repo-language-count">
 </p>
 <p align="center">
         <em>Built with the tools and technologies:</em>
@@ -129,6 +129,7 @@
 </ul>
 </li>
 <li><a href="#-contributing">🤝 Contributing</a></li>
+<li><a href="#-Para-publicar-el-APK">Publish APK </a></li>
 </ul>
 <h2>📂 Repository Structure</h2>
 <b>Example :</b><div><pre class="line-numbers"><code class="language-sh">└── dataquest/
@@ -141,7 +142,7 @@
     │   ├── app
     │   ├── build.gradle
     │   ├── capacitor.settings.gradle
-    │   ├── dataquest-keystore.jks
+    │   ├── pif-keystore.jks
     │   ├── gradle
     │   ├── gradle.properties
     │   ├── gradlew
@@ -222,12 +223,12 @@
 <h3>📦 Installation</h3>
 <p>Build the project from source:</p>
 <ol>
-<li>Clone the dataquest repository:</li>
+<li>Clone the pif5_dataquest repository:</li>
 </ol>
-<b>Example :</b><div><pre class="line-numbers"><code class="language-sh">❯ git clone https://github.com/programa-integral-de-fruticultura-5/dataquest</code></pre></div><ol start="2">
+<b>Example :</b><div><pre class="line-numbers"><code class="language-sh">❯ git clone https://github.com/programa-integral-de-fruticultura-5/pif5_dataquest.git</code></pre></div><ol start="2">
 <li>Navigate to the project directory:</li>
 </ol>
-<b>Example :</b><div><pre class="line-numbers"><code class="language-sh">❯ cd dataquest</code></pre></div><ol start="3">
+<b>Example :</b><div><pre class="line-numbers"><code class="language-sh">❯ cd pif5_dataquest</code></pre></div><ol start="3">
 <li>Install the required dependencies:</li>
 </ol>
 <b>Example :</b><div><pre class="line-numbers"><code class="language-sh">❯ npm install</code></pre></div><ol start="4">
@@ -417,14 +418,25 @@
 <summary>Contributor Graph</summary>
 <br>
 <p align="left">
-   <a href="https://github.com{/programa-integral-de-fruticultura-5/dataquest/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=programa-integral-de-fruticultura-5/dataquest">
+   <a href="https://github.com{/programa-integral-de-fruticultura-5/pif5_dataquest/}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=programa-integral-de-fruticultura-5/pif5_dataquest">
    </a>
 </p>
 </details>
 
 <hr>
+<h2>Para publicar el APK</h2>
+<b>Example :</b><div><pre class="line-numbers"><code class="language-none">Generar release build
+ionic capacitor build android --release
 
+Generar sing key (Se realiza una sola vez, en este caso ya se generó, no hay necesidad de volver a generar) Clave: &#39;504aP89smJ&#39;
+keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+
+Firmar el apk
+jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore pif-keystore.jks android/app/build/outputs/apk/release/app-release-unsigned.apk pif
+
+Generar el apk firmado
+zipalign -v 4 android/app/build/outputs/apk/release/app-release-unsigned.apk PIF V.apk</code></pre></div>
 
 
 
@@ -499,6 +511,7 @@
        <script src="./js/libs/es6-shim.min.js"></script>
        <script src="./js/libs/EventDispatcher.js"></script>
        <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
 
        <script src="./js/compodoc.js"></script>
 

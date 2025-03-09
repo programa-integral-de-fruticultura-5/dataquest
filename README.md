@@ -43,6 +43,7 @@
     - [📦 Installation](#-installation)
     - [🤖 Usage](#-usage)
 - [🤝 Contributing](#-contributing)
+- [Publish APK ](#-Para-publicar-el-APK)
 
 
 ## 📂 Repository Structure
@@ -58,7 +59,7 @@
     │   ├── app
     │   ├── build.gradle
     │   ├── capacitor.settings.gradle
-    │   ├── dataquest-keystore.jks
+    │   ├── pif-keystore.jks
     │   ├── gradle
     │   ├── gradle.properties
     │   ├── gradlew
@@ -391,3 +392,19 @@ To contribute to the project, please follow this guidelines
 </details>
 
 ---
+
+## Para publicar el APK
+
+```
+Generar release build
+ionic capacitor build android --release
+
+Generar sing key (Se realiza una sola vez, en este caso ya se generó, no hay necesidad de volver a generar) Clave: '504aP89smJ'
+keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+
+Firmar el apk
+jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore pif-keystore.jks android/app/build/outputs/apk/release/app-release-unsigned.apk pif
+
+Generar el apk firmado
+zipalign -v 4 android/app/build/outputs/apk/release/app-release-unsigned.apk PIF V.apk
+```
